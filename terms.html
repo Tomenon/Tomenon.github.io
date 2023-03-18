@@ -5,14 +5,39 @@
     <style>
       /* center the text */
       body {
-        text-align: center;
         background: rgb(35,51,41);
-        background: linear-gradient(130deg, rgba(35,51,41,1) 50%, rgba(99,212,113,1) 100%);
+        background: linear-gradient(130deg, rgba(35,51,41,1) 0%, rgba(53,111,62,1) 75%, rgba(99,212,113,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .box {
+        background-color: #fff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 20px;
+        max-width: 80%;
+        text-align: center;
+      }
+      
     </style>
   </head>
   <body>
-    <h1>Terms and Conditions</h1>
-    <p>Insert your terms and conditions here.</p>
+    <div class="container">
+      <div class="box">
+        <h1>Terms of Service</h1>
+        <p>Insert your terms of service text here.</p>
+      </div>
+    </div>
   </body>
 </html>
