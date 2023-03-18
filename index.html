@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Discord Bot</title>
+    <title>Sylphy Bot</title>
     <style>
-      /* center the text */
+      /* center the text vertically and horizontally, and add the gradient background */
       body {
-        text-align: center;
         background: rgb(35,51,41);
         background: linear-gradient(130deg, rgba(35,51,41,1) 50%, rgba(99,212,113,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      /* hide the default text in the h1 tag */
+      h1 {
+        display: none;
+      }
+      
+      /* show the image in place of the title */
+      .logo {
+        display: block;
+        width: 300px;
       }
     </style>
   </head>
   <body>
-    <h1>Welcome to My Discord Bot</h1>
+    <h1>Welcome to Sylphy Bot</h1>
+    <img src=https://sylphybotimagearchive.s3.us-east-2.amazonaws.com/sylphy_bot_pfp.jpg alt="My Discord Bot Logo" class="logo">
     <p>Click <a href=https://discord.com/api/oauth2/authorize?client_id=1076175616036061194&permissions=117824&scope=bot%20applications.commands>here</a> to add the bot to your server.</p>
     <p>Click <a href=terms.html>here</a> to view the terms and conditions.</p>
   </body>
